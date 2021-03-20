@@ -1,0 +1,9 @@
+void setup() {
+  Serial.begin(9600);  //開始輸出訊息到監控視窗
+}
+
+void loop() {
+  int sensorValue = analogRead(A0);  //讀取A0的值
+  Serial.println(sensorValue);       //在監控視窗顯示讀取的值
+  delay(10);
+}
